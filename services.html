@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Blue Publication Services - Introduction</title>
+    <title>Blue Publication Services - Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
@@ -18,7 +18,7 @@
                 <nav class="ml-10 space-x-4">
                     <a class="text-white-700 hover:text-custom-blue" href="index.html">Home</a>
                     <a class="text-white-700 hover:text-custom-blue" href="services.html">Services</a>
-                    <a class="text-white-700 hover:text-custom-blue" href="#about">About Us</a>
+                    <a class="text-white-700 hover:text-custom-blue" href="#">About Us</a>
                     <a class="text-white-700 hover:text-custom-blue" href="#">Contact</a>
                 </nav>
             </div>
@@ -32,43 +32,97 @@
             </div>
         </div>
     </header>
-    <!-- Hero Section -->
-    <section class="custom-blue py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl font-bold mb-4">Blue Publication: Printing the Future, One Page at a Time</h1>
-            <p class="text-lg mb-8">Publishing with Precision, Passion and Purpose.</p>
-            <a class="custom-button px-6 py-3 rounded-full font-semibold" href="services.html">Get Started</a>
-        </div>
-    </section>
-    <!-- About Us Section -->
-    <section id="about" class="bg-white p-6 rounded-lg shadow-lg text-center">
-        <div class="container mx-auto px-4 text-center transition-all duration-500 ease-in-out mt-4 bg-white p-4 rounded-lg shadow-md" style="max-width: 600px;">
-            <h2 class="text-3xl font-bold mb-6">About Us</h2>
-            <p class="mt-2 text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-                Blue Publication is a trusted provider of scholarly article publication and research consultation services. 
-                We specialize in SCOPUS, Web of Science, PubMed, Google Scholar, and other prestigious journal indexing databases. 
-                Our mission is to streamline the publication process and help researchers achieve recognition in high-impact, peer-reviewed journals.
-                <button id="learnMoreBtn" class="mt-4 text-blue-600 font-semibold hover:underline focus:outline-none">
-                    Learn More
-                </button>
-            </p>
-            
-            
-            
-            <!-- Scrollable "More Info" Section -->
-            <div id="moreInfo" style="display: none; overflow-y: auto;" >
-                <p class="mt-2 text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-                    We also offer expert guidance for SCI and SCIE journal publishing, assisting researchers in navigating the complexities of academic publishing. <br><br>
-                    Our experienced professionals support researchers across various fields, including arts, sciences, engineering, management, and technology. 
-                    We provide end-to-end research consultation, helping authors refine and enhance their research to meet the standards of reputed peer-reviewed journals. <br><br>
-                    At Blue Publication, we meticulously review and assess each research article, ensuring its alignment with high-impact journals. 
-                    Our comprehensive editorial and peer-review services help authors publish their work in top-tier indexed journals with strong impact factors.
-                </p>
+    <!-- Services Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img alt="Icon representing Service 2" height="100" src="https://storage.googleapis.com/a1aa/image/XwtnadVyBbv8FpT94DXUa1WMBIMSTBfBmMlMkiARqrM.jpg" width="100"/>
+                    <h3 class="text-xl font-bold mt-4">Publication</h3>
+                    <p class="mt-2 text-gray-600">At Blue Publication, we offer a wide range of services designed to assist researchers, scholars, and professionals in achieving successful research publication. Our services include:
+                        <button id="learnMoreBtnPublication" class="mt-4 text-blue-600 font-semibold hover:underline focus:outline-none">
+                            Learn More
+                        </button>
+                    </p>
+                    
+                    
+                    <!-- Scrollable "More Info" Section -->
+                    <div id="moreInfoPublication" style="display: none; overflow-y: auto;">
+                        <ul class="mt-2 text-gray-600 list-disc list-inside text-left mt-4">
+                            <li>Research Publication – In-House Journals</li>
+                            <li>Research Publication – Collaborative Journals</li>
+                            <li>Research Guidance & Consultation</li>
+                            <li>Conference Proceedings Support</li>
+                            <li>Authorship Assistance</li>
+                            <li>Research Article Writing</li>
+                            <li>DOI Registration Services</li>
+                            <li>Open Journal Systems (OJS) Services</li>
+                            <li>Web Development & Maintenance</li>
+                            <li>Digital Marketing Solutions</li>
+                            <li>Copy Editing & Formatting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img alt="Icon representing Service 2" height="100" src="https://storage.googleapis.com/a1aa/image/XwtnadVyBbv8FpT94DXUa1WMBIMSTBfBmMlMkiARqrM.jpg" width="100"/>
+                    <h3 class="text-xl font-bold mt-4">Call For Paper</h3>
+                    <p class="mt-2 text-gray-600">At Blue Publication, we follow a transparent and inclusive selection process, welcoming contributions from Ph.D. candidates, medical professionals, engineers, lecturers, professors, scientists, researchers, and more.
+                        <button id="learnMoreBtnCallForPaper" class="mt-4 text-blue-600 font-semibold hover:underline focus:outline-none">
+                            Learn More
+                        </button>
+                    </p>
+                    
+                    
+                    <!-- Scrollable "More Info" Section -->
+                    <div id="moreInfoCallForPaper" style="display: none; overflow-y: auto;">
+                        <p class="mt-2 text-gray-600">
+                            We take pride in helping authors find the most suitable, high-impact journals for their research publication. Our dedicated team employs effective strategies to maximize the chances of getting your paper published in your preferred journal.
+                            Our publication process is meticulously structured, user-friendly, and efficient, ensuring clarity and ease of understanding for authors. Every submitted manuscript undergoes a thorough evaluation by our highly qualified editorial team and expert peer-review panel. Additionally, any inconsistencies in the text are carefully formatted and refined to align with the specific requirements of the target journal.
+                            We provide personalized guidance and support to authors throughout the entire publication journey. Our comprehensive advisory services assist with journal selection, manuscript editing, formatting, and submission, ensuring a smooth, professional, and organized experience. Authors can focus on their research while we handle the complexities of the publication process.
+                            At Blue Publication, we are committed to offering the fastest and most efficient research article publication services. Authors can also participate in online webinars to gain insights into the publishing process. By collaborating with us and sharing their research goals, authors can benefit from an accelerated review and publication timeline. Our team works tirelessly to facilitate publications in renowned, indexed journals, helping researchers achieve academic and professional success.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
-    
+    <!-- Contact Us Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <p class="text-center mb-8">Looking for more information? Submit your information and an Asana representative will follow up with you as soon as possible. Have a simple question? Check our FAQ. Click here.</p>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">E-mail</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="E-mail">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone Number</label>
+                    <div class="flex">
+                        <span class="inline-flex items-center px-3 border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm rounded-l-md">
+                            <img src="https://flagcdn.com/w20/in.png" alt="India Flag" class="w-5 h-auto">
+                            +91
+                        </span>
+                        <input class="shadow appearance-none border rounded-r-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="tel" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Submit Your Query
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-4 text-center">
@@ -80,9 +134,17 @@
         </div>
     </footer>
     <script>
-        document.getElementById('learnMoreBtn').addEventListener('click', function() {
-            var moreInfo = document.getElementById('moreInfo');
-            var learnMoreBtn = document.getElementById('learnMoreBtn');
+        document.getElementById('learnMoreBtnPublication').addEventListener('click', function() {
+            var moreInfo = document.getElementById('moreInfoPublication');
+            var learnMoreBtn = document.getElementById('learnMoreBtnPublication');
+
+            moreInfo.style.display = "block"; // Show the paragraph
+            learnMoreBtn.style.display = "none"; // Hide the Learn More button
+        });
+
+        document.getElementById('learnMoreBtnCallForPaper').addEventListener('click', function() {
+            var moreInfo = document.getElementById('moreInfoCallForPaper');
+            var learnMoreBtn = document.getElementById('learnMoreBtnCallForPaper');
 
             moreInfo.style.display = "block"; // Show the paragraph
             learnMoreBtn.style.display = "none"; // Hide the Learn More button
