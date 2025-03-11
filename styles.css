@@ -3,7 +3,12 @@
 /* Custom color for the theme */
 
 body {
-        overflow: hidden; /* Prevent scrollbars */
+        overflow: auto; /* Allow the page to scroll */
+        margin: 0;
+    }
+
+footer {
+        border: none; /* Ensure no border is applied */
     }
     
 .custom-blue {
