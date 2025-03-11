@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Blue Publication Services - Introduction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="custom-blue">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Company logo" height="10" src="LOGO.jpg" width="50"/>
+                <nav class="ml-10 space-x-4">
+                    <a class="text-gray-700 hover:text-custom-blue" href="index.html">Home</a>
+                    <a class="text-gray-700 hover:text-custom-blue" href="services.html">Services</a>
+                    <a class="text-gray-700 hover:text-custom-blue" href="#about">About Us</a>
+                    <a class="text-gray-700 hover:text-custom-blue" href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="flex items-center">
+                <a href="mailto:your-email@example.com" class="text-blue-500 hover:text-blue-700 ml-4" title="Email Us">
+                    <i class="fab fa-microsoft fa-lg"></i> <!-- Outlook icon -->
+                </a>
+                <a href="https://wa.me/your-phone-number" target="_blank" class="text-green-500 hover:text-green-700 ml-4">
+                    <i class="fab fa-whatsapp fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="custom-blue py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Blue Publication Services</h1>
+            <p class="text-lg mb-8">Your trusted partner in academic and professional publishing.</p>
+            <a class="custom-button px-6 py-3 rounded-full font-semibold" href="services.html">Get Started</a>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="bg-gray-200 py-20 flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">About Us</h2>
+            <p class="max-w-2xl mx-auto text-lg leading-relaxed">
+                Blue Publication is a trusted provider of scholarly article publication and research consultation services. 
+                We specialize in SCOPUS, Web of Science, PubMed, Google Scholar, and other prestigious journal indexing databases. 
+                Our mission is to streamline the publication process and help researchers achieve recognition in high-impact, peer-reviewed journals.
+            </p>
+            
+            <button id="learnMoreBtn" class="mt-4 text-blue-600 font-semibold hover:underline focus:outline-none">
+                Learn More
+            </button>
+            
+            <!-- Scrollable "More Info" Section -->
+            <div id="moreInfo" style="display: none; overflow-y: auto;" class="transition-all duration-500 ease-in-out mt-4 bg-white p-4 rounded-lg shadow-md">
+                <p class="max-w-2xl mx-auto text-lg leading-relaxed">
+                    We also offer expert guidance for SCI and SCIE journal publishing, assisting researchers in navigating the complexities of academic publishing. <br><br>
+                    Our experienced professionals support researchers across various fields, including arts, sciences, engineering, management, and technology. 
+                    We provide end-to-end research consultation, helping authors refine and enhance their research to meet the standards of reputed peer-reviewed journals. <br><br>
+                    At Blue Publication, we meticulously review and assess each research article, ensuring its alignment with high-impact journals. 
+                    Our comprehensive editorial and peer-review services help authors publish their work in top-tier indexed journals with strong impact factors.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Blue Publication Services. All rights reserved.</p>
+            <div class="mt-4">
+                <a class="text-white hover:text-custom-blue mx-2" href="https://www.instagram.com/your-instagram-profile" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Instagram link -->
+                <a class="text-white hover:text-custom-blue mx-2" href="https://www.linkedin.com/company/blue-publication-services/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('learnMoreBtn').addEventListener('click', function() {
+            var moreInfo = document.getElementById('moreInfo');
+
+            // Check the current display style and toggle it
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block"; // Show the paragraph
+                this.textContent = 'Show Less';
+            } else {
+                moreInfo.style.display = "none"; // Hide the paragraph
+                this.textContent = 'Learn More';
+            }
+        });
+    </script>
+</body>
+</html>

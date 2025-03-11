@@ -1,0 +1,19 @@
+/* styles.css */
+
+/* Custom color for the theme */
+
+body {
+        overflow: hidden; /* Prevent scrollbars */
+    }
+    
+.custom-blue {
+    background-color: #081a2b;
+    color: white;
+}
+
+.custom-button {
+    background-color: white;
+    color: #081a2b;
+}
+
+/* Additional styles can be added here */
