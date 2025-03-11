@@ -38,14 +38,51 @@
             <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img alt="Icon representing Service 1" height="100" src="https://storage.googleapis.com/a1aa/image/c752ivnFAbEklH4wo7w_9s_Ke_kZDE1ufSDSNHkasaE.jpg" width="100"/>
+                    <img alt="Icon representing Service 2" height="100" src="https://storage.googleapis.com/a1aa/image/XwtnadVyBbv8FpT94DXUa1WMBIMSTBfBmMlMkiARqrM.jpg" width="100"/>
                     <h3 class="text-xl font-bold mt-4">Publication</h3>
-                    <p class="mt-2 text-gray-600">Professional editing services to ensure your work is polished and publication-ready.</p>
+                    <p class="mt-2 text-gray-600">At Blue Publication, we offer a wide range of services designed to assist researchers, scholars, and professionals in achieving successful research publication. Our services include:
+                        <button id="learnMoreBtnPublication" class="mt-4 text-blue-600 font-semibold hover:underline focus:outline-none">
+                            Learn More
+                        </button>
+                    </p>
+                    
+                    
+                    <!-- Scrollable "More Info" Section -->
+                    <div id="moreInfoPublication" style="display: none; overflow-y: auto;">
+                        <ul class="mt-2 text-gray-600 list-disc list-inside text-left mt-4">
+                            <li>Research Publication – In-House Journals</li>
+                            <li>Research Publication – Collaborative Journals</li>
+                            <li>Research Guidance & Consultation</li>
+                            <li>Conference Proceedings Support</li>
+                            <li>Authorship Assistance</li>
+                            <li>Research Article Writing</li>
+                            <li>DOI Registration Services</li>
+                            <li>Open Journal Systems (OJS) Services</li>
+                            <li>Web Development & Maintenance</li>
+                            <li>Digital Marketing Solutions</li>
+                            <li>Copy Editing & Formatting</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                     <img alt="Icon representing Service 2" height="100" src="https://storage.googleapis.com/a1aa/image/XwtnadVyBbv8FpT94DXUa1WMBIMSTBfBmMlMkiARqrM.jpg" width="100"/>
                     <h3 class="text-xl font-bold mt-4">Call For Paper</h3>
-                    <p class="mt-2 text-gray-600">Expert formatting services to meet the specific requirements of your target journal or publisher.</p>
+                    <p class="mt-2 text-gray-600">At Blue Publication, we follow a transparent and inclusive selection process, welcoming contributions from Ph.D. candidates, medical professionals, engineers, lecturers, professors, scientists, researchers, and more.
+                        <button id="learnMoreBtnCallForPaper" class="mt-4 text-blue-600 font-semibold hover:underline focus:outline-none">
+                            Learn More
+                        </button>
+                    </p>
+                    
+                    
+                    <!-- Scrollable "More Info" Section -->
+                    <div id="moreInfoCallForPaper" style="display: none; overflow-y: auto;">
+                        <p class="mt-2 text-gray-600">
+                            We take pride in helping authors find the most suitable, high-impact journals for their research publication. Our dedicated team employs effective strategies to maximize the chances of getting your paper published in your preferred journal.
+                            Our publication process is meticulously structured, user-friendly, and efficient, ensuring clarity and ease of understanding for authors. Every submitted manuscript undergoes a thorough evaluation by our highly qualified editorial team and expert peer-review panel. Additionally, any inconsistencies in the text are carefully formatted and refined to align with the specific requirements of the target journal.
+                            We provide personalized guidance and support to authors throughout the entire publication journey. Our comprehensive advisory services assist with journal selection, manuscript editing, formatting, and submission, ensuring a smooth, professional, and organized experience. Authors can focus on their research while we handle the complexities of the publication process.
+                            At Blue Publication, we are committed to offering the fastest and most efficient research article publication services. Authors can also participate in online webinars to gain insights into the publishing process. By collaborating with us and sharing their research goals, authors can benefit from an accelerated review and publication timeline. Our team works tirelessly to facilitate publications in renowned, indexed journals, helping researchers achieve academic and professional success.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,11 +91,28 @@
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-4 text-center">
             <p>© 2023 Blue Publication Services. All rights reserved.</p>
-             <div class="mt-4">
+            <div class="mt-4">
                 <a class="text-white hover:text-custom-blue mx-2" href="https://www.instagram.com/your-instagram-profile" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Instagram link -->
                 <a class="text-white hover:text-custom-blue mx-2" href="https://www.linkedin.com/company/blue-publication-services/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('learnMoreBtnPublication').addEventListener('click', function() {
+            var moreInfo = document.getElementById('moreInfoPublication');
+            var learnMoreBtn = document.getElementById('learnMoreBtnPublication');
+
+            moreInfo.style.display = "block"; // Show the paragraph
+            learnMoreBtn.style.display = "none"; // Hide the Learn More button
+        });
+
+        document.getElementById('learnMoreBtnCallForPaper').addEventListener('click', function() {
+            var moreInfo = document.getElementById('moreInfoCallForPaper');
+            var learnMoreBtn = document.getElementById('learnMoreBtnCallForPaper');
+
+            moreInfo.style.display = "block"; // Show the paragraph
+            learnMoreBtn.style.display = "none"; // Hide the Learn More button
+        });
+    </script>
 </body>
 </html>
