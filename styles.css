@@ -21,4 +21,27 @@ footer {
     color: #081a2b;
 }
 
+/* Custom styles for dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown menu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu on hover */
+}
+
+.hover\:text-custom-blue:hover {
+    color: #2b6cb0;
+}
 /* Additional styles can be added here */
