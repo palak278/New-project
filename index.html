@@ -17,9 +17,28 @@
                 <img alt="Company logo" height="10" src="LOGO.jpg" width="50"/>
                 <nav class="ml-10 space-x-4">
                     <a class="text-white-700 hover:text-custom-blue" href="index.html">Home</a>
+                    <a class="text-white-700 hover:text-custom-blue" href="about.html">About Us</a>
                     <a class="text-white-700 hover:text-custom-blue" href="services.html">Services</a>
-                    <a class="text-white-700 hover:text-custom-blue" href="#about">About Us</a>
+                     <!-- Updated Dropdown Section -->
+                    <div class="relative inline-block">
+                        <button id="dropdownTrigger" class="text-white-700 hover:text-custom-blue focus:outline-none" 
+                                onclick="toggleDropdown()">
+                            Publication
+                        </button>
+                        <div id="dropdownMenu" class="absolute hidden bg-white shadow-lg rounded mt-2 min-w-[200px] z-50">
+                            <div class="py-1">
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="about.html">About Us</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="call-for-papers.html">Call for Papers</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="journals.html">Journals</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="services.html#contact">Submit your article</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="privacy-policy.html">Privacy Policy</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="refund-policy.html">Refund Policy</a>
+                            </div>
+                        </div>
+                    </div>
                     <a class="text-white-700 hover:text-custom-blue" href="services.html#contact">Contact</a>
+
+                   
                 </nav>
             </div>
             <div class="flex items-center">
@@ -27,46 +46,20 @@
                     <img alt="outlook icon" src="Microsoft_Outlook_new_logo.svg (1).png" class="w-7 h-6 bg-custom-blue"/>
                 </a>
                 <a href="https://wa.me/your-phone-number" target="_blank" class="text-green-500 hover:text-green-700 ml-4">
-                    <i class="fab fa-whatsapp fa-lg" ></i>
+                    <i class="fab fa-whatsapp fa-lg"></i>
                 </a>
             </div>
         </div>
     </header>
     <!-- Hero Section -->
-    <section class="custom-blue py-20 sticky top-0 z-40">
+    <section class="custom-blue py-20">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl font-bold mb-4">Blue Publication: Printing the Future, One Page at a Time</h1>
             <p class="text-lg mb-8">Publishing with Precision, Passion and Purpose.</p>
             <a class="custom-button px-6 py-3 rounded-full font-semibold" href="services.html">Get Started</a>
         </div>
     </section>
-    <!-- About Us Section -->
-    <section id="about" class="bg-white p-6 rounded-lg shadow-lg text-center">
-        <div class="container mx-auto px-4 text-center bg-white p-6 rounded-lg shadow-lg text-center" style="max-width: 900px;">
-            <h2 class="text-3xl font-bold mb-6">About Us</h2>
-            <p class="mt-2 text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-                Blue Publication is a trusted provider of scholarly article publication and research consultation services. 
-                We specialize in SCOPUS, Web of Science, PubMed, Google Scholar, and other prestigious journal indexing databases. 
-                Our mission is to streamline the publication process and help researchers achieve recognition in high-impact, peer-reviewed journals.
-                <button id="learnMoreBtn" class="mt-4 text-blue-600 font-semibold hover:underline focus:outline-none">
-                    Learn More
-                </button>
-            </p>
-            
-            
-            
-            <!-- Scrollable "More Info" Section -->
-            <div id="moreInfo" style="display: none; overflow-y: auto;" >
-                <p class="mt-2 text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-                    We also offer expert guidance for SCI and SCIE journal publishing, assisting researchers in navigating the complexities of academic publishing. <br><br>
-                    Our experienced professionals support researchers across various fields, including arts, sciences, engineering, management, and technology. 
-                    We provide end-to-end research consultation, helping authors refine and enhance their research to meet the standards of reputed peer-reviewed journals. <br><br>
-                    At Blue Publication, we meticulously review and assess each research article, ensuring its alignment with high-impact journals. 
-                    Our comprehensive editorial and peer-review services help authors publish their work in top-tier indexed journals with strong impact factors.
-                </p>
-            </div>
-        </div>
-    </section>
+    
     
     
     <!-- Footer -->
@@ -80,12 +73,25 @@
         </div>
     </footer>
     <script>
-        document.getElementById('learnMoreBtn').addEventListener('click', function() {
-            var moreInfo = document.getElementById('moreInfo');
-            var learnMoreBtn = document.getElementById('learnMoreBtn');
+        // Dropdown functionality
+        function toggleDropdown() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('hidden');
+        }
 
-            moreInfo.style.display = "block"; // Show the paragraph
-            learnMoreBtn.style.display = "none"; // Hide the Learn More button
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('dropdownMenu');
+            const trigger = document.getElementById('dropdownTrigger');
+            
+            if (!trigger.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+
+        // Prevent closing when clicking inside dropdown
+        document.getElementById('dropdownMenu').addEventListener('click', function(event) {
+            event.stopPropagation();
         });
     </script>
 </body>
