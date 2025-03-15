@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Blue Publication Services - Refund Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="custom-blue sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Company logo" height="10" src="LOGO.jpg" width="50"/>
+                <nav class="ml-10 space-x-4">
+                    <a class="text-white-700 hover:text-custom-blue" href="index.html">Home</a>
+                    <a class="text-white-700 hover:text-custom-blue" href="about.html">About Us</a>
+                    <a class="text-white-700 hover:text-custom-blue" href="services.html">Services</a>
+                     <!-- Updated Dropdown Section -->
+                    <div class="relative inline-block">
+                        <button id="dropdownTrigger" class="text-white-700 hover:text-custom-blue focus:outline-none" 
+                                onclick="toggleDropdown()">
+                            Publication
+                        </button>
+                        <div id="dropdownMenu" class="absolute hidden bg-white shadow-lg rounded mt-2 min-w-[200px] z-50">
+                            <div class="py-1">
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="about.html">About Us</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="call-for-papers.html">Call for Papers</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="journals.html">Journals</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="services.html#contact">Submit your article</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="privacy-policy.html">Privacy Policy</a>
+                                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="refund-policy.html">Refund Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="text-white-700 hover:text-custom-blue" href="services.html#contact">Contact</a>
+
+                   
+                </nav>
+            </div>
+            <div class="flex items-center">
+                <a href="mailto:your-email@example.com" class="text-blue-500 hover:text-blue-700 ml-4" title="Email Us">
+                    <img alt="outlook icon" src="Microsoft_Outlook_new_logo.svg (1).png" class="w-7 h-6 bg-custom-blue"/>
+                </a>
+                <a href="https://wa.me/your-phone-number" target="_blank" class="text-green-500 hover:text-green-700 ml-4">
+                    <i class="fab fa-whatsapp fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Refund Policy Section -->
+    <section id="about" class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div class="container mx-auto px-4 text-center bg-white p-6 rounded-lg shadow-lg text-center" style="max-width: 900px;">
+            <h2 class="text-3xl font-bold mb-6">Refund Policy</h2>
+            <div class="mt-2 text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed text-left">
+                <p>At Blue Publication, we are dedicated to providing high-quality publication support to our valued authors. This Refund Policy outlines the conditions under which refunds may be granted for our services. Please review the following guidelines carefully.</p>
+                
+                <h3 class="font-bold mt-4">1. Journal Unavailability</h3>
+                <p>If we are unable to accommodate an author's specific journal preference, the author has the right to withdraw their article from our services without any charges. We strive to match authors with their preferred journals and make every effort to fulfill their publication goals.</p>
+                
+                <h3 class="font-bold mt-4">2. Publication Charges</h3>
+                <p>If an author finds that the publication fees exceed their budget, they may withdraw their article from our services without any financial obligation. We understand that budgetary constraints are an important consideration, and we aim to support authors by offering cost-effective solutions.</p>
+                
+                <h3 class="font-bold mt-4">3. Direct Submission to the Provided Journal</h3>
+                <p>If Blue Publication successfully provides the author with a suitable target journal and the author later chooses to submit their article directly to the journal instead of continuing with our services, they will not be eligible for withdrawal or a refund. Additionally, penalties may apply as per our terms and conditions.</p>
+                
+                <h3 class="font-bold mt-4">4. Article Acceptance – No Cancellation Allowed</h3>
+                <p>Once an article has been accepted by the target journal, withdrawal is not permitted, and no refunds will be issued. At this stage, the article is in its final publication process, and the author must proceed with the agreed services.</p>
+                
+                <h3 class="font-bold mt-4">5. Withdrawal After Journal Selection</h3>
+                <p>Once an article has reached the stage of acceptance processing and a target journal has been finalized, the author cannot withdraw from the process. At this stage, publication arrangements have been made, and cancellation is not allowed.</p>
+                
+                <p>This Refund Policy reflects our commitment to providing authors with efficient, structured, and professional publication assistance. By using our services, authors agree to adhere to the terms and conditions outlined in this policy.</p>
+                
+                <p>For any queries or clarifications, please contact our customer support team.</p>
+                
+                <p class="italic">Note: Blue Publication reserves the right to modify or update this refund policy at any time without prior notice. The terms in effect at the time of an author's service request will apply.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Blue Publication Services. All rights reserved.</p>
+            <div class="mt-4">
+                <a class="text-white hover:text-custom-blue mx-2" href="https://www.instagram.com/your-instagram-profile" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Instagram link -->
+                <a class="text-white hover:text-custom-blue mx-2" href="https://www.linkedin.com/company/blue-publication-services/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown functionality
+        function toggleDropdown() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('dropdownMenu');
+            const trigger = document.getElementById('dropdownTrigger');
+            
+            if (!trigger.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+
+        // Prevent closing when clicking inside dropdown
+        document.getElementById('dropdownMenu').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
+</body>
+</html>
+
